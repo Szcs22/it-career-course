@@ -1,4 +1,17 @@
 header img{
-    width:auto;    /* Image has been made flexible */
+    width: auto;    /* Image has been made flexible */
     height: auto;
+}
+
+nav{
+    border-top: solid 0.3em grey;
+    border-bottom: solid 0.3em grey;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+footer {
+    border-top: solid 0.3em grey;
 }
