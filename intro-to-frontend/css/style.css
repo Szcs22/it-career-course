@@ -4,15 +4,44 @@ header img{
 }
 
 nav{
+    background-color: pink;
     border-top: solid 0.3em grey;
     border-bottom: solid 0.3em grey;
+    
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul{
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
 }
 
 nav ul li{
-    list-style-type: none;
+    list-style-type: none; /* removes bullet points fron unordered list*/
+
+    background-color: aqua; /* creating more visible nav links for mobile users*/
+    padding: 1em;
+    min-width: 12%;
+    margin: 0.25em;
+}
+
+nav ul li a {
+    color: violet;
+    text-decoration: none; /* removes underline from hyperlink */
 }
 
 footer {
+    background-color: paleturquoise;
     border-top: solid 0.3em grey;
     color: gray;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 640px) { /* Mobile-first strategy */
+    nav ul li {
+        border-radius: 5em; /* if screen width is samller than 640px the nav links get rounded borders*/
+    }
 }
