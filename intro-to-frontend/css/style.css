@@ -4,9 +4,9 @@ header img{
 }
 
 nav{
-    background-color: pink;
+    /* background-color: pink;
     border-top: solid 0.3em grey;
-    border-bottom: solid 0.3em grey;
+    border-bottom: solid 0.3em grey; */
     
     font-weight: bold;
     text-align: center;
@@ -63,7 +63,6 @@ main div .left {
     float: left;
     width: 20%;
     padding: 10px;
-    border-right: 3px solid grey;
 }
 
 main div .center {
@@ -75,7 +74,6 @@ main div .right {
     float: right;
     padding: 10px;
     width: 30%;
-    border-left: 3px solid grey;
 }
 
 footer {
@@ -109,6 +107,10 @@ footer {
     .desktop {
        display: none;
     }
+
+    main div .center {
+        border-right: 3px solid grey;
+    }
 }
 
 @media screen and (min-width: 960px) { /* For desktops */
@@ -130,5 +132,14 @@ footer {
     nav ul li {
         border-radius: 5em;
         display: inline-block;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    main div .center {
+        border-right: 3px solid grey;
+        border-left: 3px solid grey;
     }
 }
