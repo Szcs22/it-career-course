@@ -32,6 +32,52 @@ nav ul li a {
     text-decoration: none; /* removes underline from hyperlink */
 }
 
+figure{
+    text-align: center;
+    background-color: white;
+}
+
+figure img{ /* splitting main divs into three columns */
+    max-width: 800px;
+    max-height: 600px;
+    width: 100%;
+    height: auto;
+}
+
+main{
+    background-color: powderblue;
+    border-top: 3px solid grey;
+}
+
+main .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main div .column {
+    float: left;
+}
+
+main div .left {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    border-right: 3px solid grey;
+}
+
+main div .center {
+    padding: 10px;
+    width: 35%;
+}
+
+main div .right {
+    float: right;
+    padding: 10px;
+    width: 30%;
+    border-left: 3px solid grey;
+}
+
 footer {
     background-color: paleturquoise;
     border-top: solid 0.3em grey;
@@ -44,12 +90,24 @@ footer {
     nav ul li {
         border-radius: 5em; /* if screen width is samller than 640px the nav links get rounded borders*/
     }
+
+    .tablet {
+        display: none; /* figure will disapear in a mobile viewport but shows in tabley/desktop viewport */
+    }
+
+    .desktop{
+        display:none;
+    }
 }
 
 @media screen and (min-width: 640px) { /* For tablets*/
     nav ul li {
         border-radius: 5em;
         display: inline-block; /* puts list items horizontally and allows them to stretch */
+    }
+
+    .desktop {
+       display: none;
     }
 }
 
