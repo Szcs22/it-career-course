@@ -45,3 +45,11 @@ footer {
         border-radius: 5em; /* if screen width is samller than 640px the nav links get rounded borders*/
     }
 }
+
+@media screen and (min-width: 641px) { /* For tablets*/
+    nav ul li {
+        border-radius: 5em;
+        display: inline-block; /* puts list items horizontally and allows them to stretch */
+    }
+
+}
