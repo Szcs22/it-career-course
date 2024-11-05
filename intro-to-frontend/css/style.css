@@ -1,3 +1,7 @@
+@import url(media-queries/mobile.css);
+@import url(media-queries/tablet.css);
+@import url(media-queries/desktop.css);
+
 header img{
     width: auto;    /* Image has been made flexible */
     height: auto;
@@ -80,66 +84,4 @@ footer {
     background-color: paleturquoise;
     border-top: solid 0.3em grey;
     color: gray;
-}
-
-/* Media queries */
-
-@media screen and (max-width: 639px) { /* Mobile-first strategy */
-    nav ul li {
-        border-radius: 5em; /* if screen width is samller than 640px the nav links get rounded borders*/
-    }
-
-    .tablet {
-        display: none; /* figure will disapear in a mobile viewport but shows in tabley/desktop viewport */
-    }
-
-    .desktop{
-        display:none;
-    }
-}
-
-@media screen and (min-width: 640px) { /* For tablets*/
-    nav ul li {
-        border-radius: 5em;
-        display: inline-block; /* puts list items horizontally and allows them to stretch */
-    }
-
-    .desktop {
-       display: none;
-    }
-
-    main div .center {
-        border-right: 3px solid grey;
-    }
-}
-
-@media screen and (min-width: 960px) { /* For desktops */
-    header {
-        text-align: left;
-    }
-
-    header img {
-        width: auto;
-        height: 5em;
-    }
-
-    nav {
-        float: right; /* moves nav element to right side of page*/
-        margin-top: -5em; /* moves nav element up*/
-        width: 60%;
-    }
-
-    nav ul li {
-        border-radius: 5em;
-        display: inline-block;
-    }
-
-    .desktop{
-        display: block;
-    }
-
-    main div .center {
-        border-right: 3px solid grey;
-        border-left: 3px solid grey;
-    }
 }

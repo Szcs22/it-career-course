@@ -1,0 +1,14 @@
+@media screen and (min-width: 640px) { /* For tablets*/
+    nav ul li {
+        border-radius: 5em;
+        display: inline-block; /* puts list items horizontally and allows them to stretch */
+    }
+
+    .desktop {
+       display: none;
+    }
+
+    main div .center {
+        border-right: 3px solid grey;
+    }
+}

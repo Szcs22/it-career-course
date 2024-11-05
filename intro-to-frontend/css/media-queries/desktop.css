@@ -1,0 +1,30 @@
+@media screen and (min-width: 960px) { /* For desktops */
+    header {
+        text-align: left;
+    }
+
+    header img {
+        width: auto;
+        height: 5em;
+    }
+
+    nav {
+        float: right; /* moves nav element to right side of page*/
+        margin-top: -10.5em; /* moves nav element up*/
+        width: 60%;
+    }
+
+    nav ul li {
+        border-radius: 5em;
+        display: inline-block;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    main div .center {
+        border-right: 3px solid grey;
+        border-left: 3px solid grey;
+    }
+}

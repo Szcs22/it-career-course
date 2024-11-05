@@ -1,0 +1,13 @@
+@media screen and (max-width: 639px) { /* Mobile-first strategy */
+    nav ul li {
+        border-radius: 5em; /* if screen width is samller than 640px the nav links get rounded borders*/
+    }
+
+    .tablet {
+        display: none; /* figure will disapear in a mobile viewport but shows in tabley/desktop viewport */
+    }
+
+    .desktop{
+        display:none;
+    }
+}
