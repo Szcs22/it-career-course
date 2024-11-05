@@ -29,6 +29,7 @@ nav ul li{
     padding: 1em;
     min-width: 12%;
     margin: 0.25em;
+    box-shadow: 0.5em 0.5em 0.5em purple;
 }
 
 nav ul li a {
