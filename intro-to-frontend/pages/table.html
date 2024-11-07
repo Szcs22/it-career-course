@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Media queries allow different ccs styles on the same page depending on size of viewport and media it is viewed in -->
+        <link rel="stylesheet" href="../css/style.css"> 
+    </head>
+    <body>
+        <header>
+            <a href="index.html" target="_blank"> <!-- When the image is clicked it will open a new tab directed to the Home Page -->
+                <img src="../media/images/smiley.png" alt="Smiling face emoji png">
+            </a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href ="table.html"></a>Table</li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="schedule">
+                <table>
+                    <caption>A random schedule!</caption>
+                    <tr> <!-- Row 1 -->
+                        <th>Random Person</th> <!-- Table header elements-->
+                        <th>Days</th>
+                        <th>Time</th>
+                    </tr>
+
+                    <tr> <!-- ROw 2 etc ... -->
+                        <td>Person A</td> <!-- Table data element-->
+                        <td> M T W</td>
+                        <td> 10AM - 3PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Person B</td>
+                        <td>W F S</td>
+                        <td> 12PM - 6PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Person C</td>
+                        <td>M Th F Sun</td>
+                        <td>9AM - 2PM</td>
+                    </tr>
+                </table>
+            </div>
+
+        </main>
+        
+        <footer>
+            <p> Ramdom Location:<br>
+                Random House, Random Street<br>
+                Random Town, Random County<br>
+                AB1 2CD
+            </p>
+            <p>Random Number: <a href="tel:01234567890">01234567890</a></p> <!-- Useful on mobiles as it can ask used if thay want to phone number -->
+            <p>Random Email: <a href="mailto:aperson@abusiness.com">aperson@abusiness.com</a></p> 
+        </footer>
+    </body>
+</html>
