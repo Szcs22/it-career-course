@@ -1,6 +1,10 @@
 @import url(media-queries/mobile.css);
 @import url(media-queries/tablet.css);
 @import url(media-queries/desktop.css);
+@import url(components/table.css);
+
+
+/* Global style rules for webpages */
 
 header img{
     width: auto;    /* Image has been made flexible */
@@ -52,7 +56,18 @@ figure img{ /* splitting main divs into three columns */
 main{
     background-color: powderblue;
     border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
+    margin: 1em;
+    padding: 1em;
 }
+
+footer {
+    background-color: paleturquoise;
+    border-top: solid 0.3em grey;
+    color: gray;
+}
+
+/* For media queries */
 
 main .row:after {
     content: "";
@@ -79,10 +94,4 @@ main div .right {
     float: right;
     padding: 10px;
     width: 30%;
-}
-
-footer {
-    background-color: paleturquoise;
-    border-top: solid 0.3em grey;
-    color: gray;
 }

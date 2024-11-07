@@ -1,0 +1,24 @@
+.schedule table {
+    border: 0.1em solid black;
+    padding: 2em;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: palevioletred;
+}
+
+.schedule caption {
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.schedule th, td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.schedule th {
+    background-color: black;
+    color: white;
+}
