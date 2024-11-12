@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+    
+        <script type="text/Javascript">
+
+            function enter() {
+                var anumber = 1;
+                let string = "1";
+                var bstring="2";
+                const aboolean = true;
+                var bnumber = 3;
+
+                alert(anumber);
+            }
+
+            function cond() {
+                let anumber = 1;
+                let string = "1";
+                var bstring="2";
+                var aboolean = true;
+
+                if (aboolean) {
+                    alert(aboolean);
+                }
+                else {
+                    alert("if is false.");
+                }
+
+            }
+
+            function loops() {
+
+                var x = 2;
+
+                var y = 5;
+
+                /*while (x < y) {
+                    alert ("x is less than y");
+                    x++;
+                }*/
+
+                do {
+                    alert ("x is less than y");
+                    x++;
+                }
+                while (x < y);
+            }
+
+
+        </script>
+
+    </head>
+    <body>
+        <header>
+           
+        </header>
+
+        <nav>
+            <a href="indexcopy.html">Home</a>
+            <a href="datatypes.html">Data Types</a>
+            <a href="globalmethods.html">Global Methods</a>
+        </nav>
+
+        <main>
+            <input type="submit" id="submit" value="Submit" onclick="enter()"> 
+            <input type="submit" id="submit" value="Submit" onclick="cond()"> 
+            <input type="submit" id="submit" value="Submit" onclick="loops()"> 
+            
+        </main>
+        
+        <footer>
+           
+        </footer>
+    </body>
+</html>
