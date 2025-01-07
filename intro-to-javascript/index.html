@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script> <!-- scr to JQuery -->
+        <script>
+            /*$(document).ready(function () {
+               $("button").click(function () {
+                    $("p").hide();
+                })
+
+            }); */
+
+            // $("*") - wildcard, all elements
+            // $(this) - current html element
+            // you can also get via class, css selector, attr
+
+           
+
+            $(document).ready(function () {
+                $("#btn1").click(function () {
+                    alert("Text: " + $("#altest").text()); //.html retrieves the html without the start/end tags
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <h1 id="firlet">What can JavaScript Do?</h1>
+
+        <p id="demo">JavaScript can change HTML content.</p>
+
+        <p id="altest">Hello again!</p>
+
+        <button id ="btn1" type="button">Click me!</button>
+
+        <script>
+            function myFunction () {
+                //$("#firlet").html("Hello!!!");
+                $("#firlet").attr("style", "color:red").html("Hi!!!");
+            }
+
+            $(document).ready(myFunction);
+        </script>
+    </body>
+</html>
